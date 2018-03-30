@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+    app:
+        restart: always
+        build: .
+        volumes:
+            - ./app:/app
+        entrypoint:
